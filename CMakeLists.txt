@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.21)
 
 include(${CMAKE_CURRENT_LIST_DIR}/tools/rp6502.cmake)
 
+find_package(Python3 REQUIRED COMPONENTS Interpreter)
 
 add_custom_command(
     OUTPUT background.bin background_pal.bin
